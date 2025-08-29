@@ -1,11 +1,9 @@
-// index.js
 const express = require("express");
 const bodyParser = require("body-parser");
 
 const app = express();
 app.use(bodyParser.json());
 
-// Your details
 const FULL_NAME = "deepbendu debnath"; 
 const DOB = "25112003"; 
 const EMAIL = "debnathdeepbendu@gmail.com";
@@ -79,3 +77,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
+
